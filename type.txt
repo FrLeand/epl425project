@@ -1,0 +1,29 @@
+$type  = /*type here*/;
+
+$typeFrame_query = sprintf("SELECT frameName, filename FROM Frames WHERE frameType='%s'", mysql_real_escape_string($type));
+
+--------------------------------------------------------------------------------
+
+$allFrame_query =  sprintf("SELECT frameName, filename FROM Frames");
+
+--------------------------------------------------------------------------------
+$color = /*color here*/;
+
+$colorFrame_query = sprintf("SELECT frameName, filename FROM Frames WHERE frameColor='%s'", mysql_real_escape_string($color));
+
+--------------------------------------------------------------------------------
+$name = /*name here*/;
+
+$sizeFrame_query = sprintf("SELECT size, price FROM FramesPrice WHERE name='%s'", mysql_real_escape_string($name));
+
+--------------------------------------------------------------------------------
+
+$allMat_query =  sprintf("SELECT name, filename, price FROM Mat");
+
+--------------------------------------------------------------------------------
+$color = /*color here*/;
+
+$colorMat_query = sprintf("SELECT name, filename, price FROM Mat WHERE color='%s'", mysql_real_escape_string($color));
+
+
+
